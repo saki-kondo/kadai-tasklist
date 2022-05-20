@@ -15,11 +15,11 @@ import javax.persistence.Table;
 @NamedQueries({
     @NamedQuery(
         name = "getAllTasklist",
-        query = "SELECT t FROM Tasklist AS t ORDER BY t.id DESC"
+        query = "SELECT t FROM Tasks AS t ORDER BY t.id DESC"
     )
 })
 @Table(name = "tasks")
-public class Tasklist {
+public class Tasks {
 
     // ID
     @Id

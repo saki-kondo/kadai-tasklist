@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.Tasklist;
+import model.Tasks;
 import utils.DBUtil;
 
 /**
@@ -40,7 +40,7 @@ public class CreateServlet extends HttpServlet {
             em.getTransaction().begin();
 
             // Tasklistのインスタンス生成
-            Tasklist t = new Tasklist();
+            Tasks t = new Tasks();
 
             // 各フィールドにデータを代入
             String content = request.getParameter("content");
